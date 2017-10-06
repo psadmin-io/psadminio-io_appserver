@@ -45,6 +45,16 @@ The very basic steps needed for a user to get the module up and running. This ca
 
 This section is where you describe how to customize, configure, and do the fancy stuff with your module here. It's especially helpful if you include usage examples and code samples for doing things with your module.
 
+```yaml
+io_appserver::desktop_folder: true
+```
+
+In a DPK Profile, simply include the module:
+
+```puppet
+contain ::io_appserver
+```
+
 ## Reference
 
 Users need a complete list of your module's classes, types, defined types providers, facts, and functions, along with the parameters for each. You can provide this list either via Puppet Strings code comments or as a complete list in the README Reference section.
