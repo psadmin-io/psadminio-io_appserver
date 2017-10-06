@@ -1,0 +1,50 @@
+{
+  "name": "psadminio-io_appserver",
+  "version": "0.1.0",
+  "author": "Dan Iverson",
+  "summary": "This modules is meant to fill in the gaps between an Oracle delivered PeopleSoft install via DPK and a running production system. Settings that cannot be configured from the DPK will be settable here from Hiera.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/psadmin-io/psadminio-io_appserver",
+  "issues_url": "https://github.com/psadmin-io/psadminio-io_appserver/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.13.1 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7.0"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "16.04"
+      ]
+    },
+    {
+      "operatingsystem": "windows",
+      "operatingsystemrelease": [
+        "2012 R2"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.7.0 < 6.0.0"
+    }
+  ],
+  "pdk-version": "1.0.1",
+  "template-url": "file://C:/Program Files/Puppet Labs/DevelopmentKit/share/cache/pdk-module-template.git",
+  "template-ref": "heads/master-0-g5db7961"
+}
