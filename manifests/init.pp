@@ -4,6 +4,7 @@ class io_appserver (
   $oracle_install_group_name = hiera('oracle_install_group_name', undef),
   $domain_user               = hiera('domain_user', undef),
   $appserver_domain_list     = hiera_hash('appserver_domain_list', undef),
+  $domain_password           = hiera('domain_password', undef)
   $desktop_folder            = false,
 ){
 
@@ -28,6 +29,9 @@ class io_appserver (
 
   if ($io_appserver::desktop_folder) {
     contain ::io_appserver::desktop_folder
+  }
+  if ($io_appserver::domain_user) {
+    contain ::io_appserver::service
   }
 
 }
