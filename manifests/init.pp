@@ -30,8 +30,8 @@ class io_appserver (
   if ($io_appserver::desktop_folder) {
     contain ::io_appserver::desktop_folder
   }
-  if ($io_appserver::domain_user) {
-    contain ::io_appserver::service
-  }
+  # if ($io_appserver::domain_user) {
+  #   contain ::io_appserver::service
+  # }
 
 }
