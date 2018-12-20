@@ -9,6 +9,6 @@ class io_appserver::desktop_folder (
 
   file {'desktop-folder-32':
     path => 'C:/Windows/SysWOW64/config/systemprofile/Desktop',
-    ensure => folder,
+    ensure => directory,
   }
 }
